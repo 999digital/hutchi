@@ -1,0 +1,27 @@
+.two-col-content {
+  margin-top:85px;
+  margin-bottom:85px;
+  &.theme-white-blue,
+  &.theme-blue-black{
+    padding-top:85px;
+    padding-bottom:85px;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+  }
+  .standout {
+    color: var(--txt-color);
+    text-align: right;
+
+    @include media-breakpoint-up(md) {
+      font-size: 8.462vw;
+    }
+  }
+
+  .strapline {
+    padding-top: 54px;
+  }
+
+  .col-content-wrapper {
+    max-width: 530px;
+  }
+}

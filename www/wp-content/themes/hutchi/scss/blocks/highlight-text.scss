@@ -1,0 +1,32 @@
+.highlight-text {
+  background-color: var(--bg-color);
+  color: var(--txt-color-alt);
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 55px;
+
+  .color-alt {
+    color: var(--txt-color-alt);
+    max-width: 1280px;
+
+  }
+
+  .sub-txt {
+    max-width: 750px;
+  }
+
+  .color-alt,
+  .sub-txt {
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .eyebrow {
+    &:after {
+      background-color: var(--txt-color-alt);
+      margin: 30px auto 18px;
+    }
+  }
+
+}

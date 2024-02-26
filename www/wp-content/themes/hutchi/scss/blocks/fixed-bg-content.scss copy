@@ -1,0 +1,84 @@
+.fixed-bg {
+  background-color: #000;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .container, .row.main, .col-left, .col-right {
+    height: 100vh;
+  }
+
+  .col-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .icon {
+    max-width: 70px;
+    max-height: 70px;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    @include font-size(1.875rem);
+    color: $colour-blue;
+  }
+
+  .text-wrap {
+    max-width: 540px;
+    margin: auto auto;
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+  }
+
+  .col-left {
+    > * {
+      max-width: 540px;
+    }
+
+    .text-wrap {
+      align-items: flex-start;
+    }
+  }
+
+  .col-right {
+    .text-wrap {
+      font-weight: 600;
+      @include font-size(1.5rem);
+      line-height: 1.26;
+      background: $colour-white;
+      color: $colour-black;
+      padding: 40px;
+      align-items: center;
+    }
+ 
+  }
+
+  .footnote {
+    position: absolute;
+    bottom: 0;
+    color: $colour-grey;
+    @include font-size(0.875rem);
+  }
+
+  @include media-breakpoint-down(md) {
+    height: auto;
+    .container, .row, .col-12 {
+      height: auto;
+    }
+    .col-12 {
+      padding-top: 100px;
+    }
+    .col-left {
+      .text-wrap {
+        aspect-ratio: auto;
+      }
+    }
+    .footnote {
+      position: relative;
+    }
+  }
+}

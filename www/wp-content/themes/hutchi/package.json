@@ -1,0 +1,33 @@
+{
+  "name": "hutchi2023",
+  "version": "1.0.0",
+  "description": "Hutchi 2023 - Bootstrap 5 based theme",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.1",
+    "jquery": "^3.7.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Callum Elliot",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.64.2",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard": "^34.0.0"
+  }
+}

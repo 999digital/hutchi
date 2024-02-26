@@ -1,0 +1,41 @@
+.blog-panel {
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+  .bg-filter {
+    opacity: .6;
+  }
+
+  .col {
+    position: relative;
+  }
+
+  .border-frame {
+    margin: 70px 12px 60px;
+    padding: 65px 70px;
+  }
+
+  * {
+    color: $colour-white;
+  }
+
+  .fl {
+    float: left;
+  }
+
+  .top-link {
+    float: right;
+
+  }
+
+  .link-btn .text {
+    color: $colour-white;
+  }
+
+  h2 {
+    clear: both;
+    margin-bottom: 140px;
+  }
+}

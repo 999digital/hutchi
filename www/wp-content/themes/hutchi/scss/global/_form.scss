@@ -1,0 +1,78 @@
+.post-filters {
+
+  max-width: 750px;
+  margin: 40px auto;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  label {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: $colour-white;
+  }
+
+
+  .form-group option,
+  .form-group select {
+    border-radius: 0;
+    padding: 5px;
+    border-color: $colour-grey-2;
+    background-color: $colour-grey-2;
+    color: $colour-white;
+    letter-spacing: 3px;
+  }
+
+  .d-flex .btn {
+    border-radius: 0;
+    padding: 5px;
+    border-color: $colour-white;
+    background-color: $colour-white;
+    color: $colour-black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .form-group {
+    width: 100%;
+    padding: 10px 10px;
+    @include media-breakpoint-up(md) {
+      width: calc(50% - 78px);
+      padding: 0 10px;
+    }
+
+    option,
+    select {
+      width: 100%;
+    }
+  }
+
+  .d-flex {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 155px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 4px 30px;
+      @include media-breakpoint-up(md) {
+        margin-top: auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// contact form
+.wpforms-container input.wpforms-field-medium,
+.wpforms-container select.wpforms-field-medium,
+.wpforms-container .wpforms-field-row.wpforms-field-medium {
+  max-width: 100%;
+}

@@ -1,0 +1,48 @@
+.partners {
+  margin-top:50px;
+  margin-bottom:50px;
+  h4.eyebrow {
+    text-align: center;
+
+    &:after {
+      margin: 30px auto 55px;
+      background-color: $colour-green;
+    }
+  }
+
+  .border {
+    position: relative;
+    padding: 40px 70px 60px;
+    border-width: 8px !important;
+    --bs-border-color: #{$colour-green};
+
+    &:before, &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width:  8px;
+      height: 25px;
+      background-color: var(--bs-border-color);
+      left: calc(50% - 4px);
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+  }
+  .link-btn{
+    margin: 50px auto;
+    justify-content: center;
+    &__icon {
+      svg {
+        .theme-icon-content-fill {
+          fill: $colour-green;
+        }
+      }
+    }
+  }
+}

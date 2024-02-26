@@ -1,0 +1,73 @@
+.fixed-bg {
+  background-color: $colour-black;
+  position: relative;
+  height: 100vh;
+
+  .container, .row.main, .row-main .col-12 {
+    height: 100vh;
+  }
+
+  .row.main .col-12 {
+    padding: 6.5% 0 10% 0;
+    display: flex;
+  }
+
+  .bar {
+    border-left: 3px solid $colour-black;
+    border-bottom: 3px solid $colour-black;
+    height: 100%;
+    width: 50px;
+    opacity: 0.1;
+  }
+
+  .icon {
+    max-width: 70px;
+    max-height: 70px;
+    margin-bottom: 30px;
+  }
+
+  .text-wrap {
+    max-width: 850px;
+
+    h4 {
+      @include font-size(2.2rem);
+      font-weight: 400;
+      line-height: 1.15;
+      color: $colour-blue;
+      margin-top: -1%;
+    }
+
+    p {
+      font-weight: 600;
+      @include font-size(1.45rem);
+      margin-top: 15%;
+      width: 60%;
+      line-height: 1.35;
+    }
+  }
+
+  .footnote {
+    position: absolute;
+    bottom: 4%;
+    color: $colour-grey;
+    @include font-size(0.875rem);
+  }
+
+  //Theming
+  &.yellow {
+    background-color: $colour-yellow;
+    color: $colour-black;
+    h4 {
+      color: $colour-black;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .text-wrap {
+      padding-right: 10px;
+      p {
+        width: 100%;
+      }
+    }
+  }
+}

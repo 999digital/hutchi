@@ -1,0 +1,141 @@
+/* VARIABLES */
+
+$colour-red: #FF5F47;
+$colour-blue: #3777FF;
+$colour-green: #41A486;
+$colour-black: #140D1C;
+$colour-white: #ffffff;
+$colour-grey: #707070;
+$colour-grey-2: #2c2633;
+$colour-yellow: #E6F14A;
+$colour-yellow-dk: #B5BC57;
+$colour-peach: #FB9F89;
+
+$font-family-sans-serif: "Graphik Web", Helvetica, Arial, sans-serif;
+$font-size-base: 1.125rem;
+
+$breadcrumb-divider: quote(">");
+$breadcrumb-padding-y: .5rem;
+$breadcrumb-padding-x: .5rem;
+$breadcrumb-active-color: $colour-white;
+$breadcrumb-divider-color: $colour-white;
+$breadcrumb-margin-bottom: 0;
+
+$navbar-toggler-border-radius: 0;
+$navbar-toggler-transition: none;
+
+$navbar-light-toggler-border-color: none;
+$navbar-dark-toggler-border-color: none;
+
+$accordion-button-padding-x: 20px;
+$accordion-icon-color: $colour-white;
+$accordion-icon-active-color: $colour-white;
+
+$display-font-sizes: (
+        1: 4.063rem,
+        2: 4.625rem,
+        3: 3.625rem,
+        4: 2.625rem
+);
+
+
+// p:  18:24 / 16:24 reg
+
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1390px,
+        xxxl: 1850px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1320px,
+        xxxl: 1820px
+);
+
+
+:root {
+  --bs-navbar-color: $colour-white;
+
+  --bg-color: #{$colour-white};
+  --txt-color: #{$colour-black};
+  --bs-heading-color: #{$colour-black};
+  --txt-color-alt: #{$colour-black};
+  --link-text-colour: #{$colour-black};
+  // yellow
+  --color-yellow: #{$colour-yellow};
+
+  // link button svg
+  --t-linkbutton-icon-bg: #{$colour-black};
+
+  // cta-bar
+  --cta-link-icon: #{$colour-yellow};
+
+  //highlight-text
+
+
+}
+
+.theme-white {
+  --txt-color: #{$colour-white};
+  --bs-heading-color: #{$colour-white};
+  // link button svg
+  --t-linkbutton-icon-bg: #{$colour-white};
+  // cta-bar
+  --cta-link-icon: #{$colour-black};
+  //interactive list
+  --heading-color: #{$colour-blue};
+}
+
+.theme-black {
+  --bg-color: #{$colour-black};
+  --bs-heading-color: #{$colour-black};
+  --txt-color-alt: #{$colour-white};
+  //interactive list
+  --heading-color: #{$colour-blue};
+}
+
+.theme-blue {
+  --bg-color: #{$colour-blue};
+  --txt-color: #{$colour-blue};
+  --bs-heading-color: #{$colour-blue};
+  --txt-color-alt: #{$colour-white};
+  // link button svg
+  --t-linkbutton-icon-bg: #{$colour-blue};
+  //interactive list
+  --heading-color: #{$colour-black};
+}
+
+.theme-white-blue {
+  --bg-color: #{$colour-blue};
+  --bs-heading-color: #{$colour-white};
+  --txt-color: #{$colour-white};
+  --t-linkbutton-icon-bg: #{$colour-white};
+  --link-text-colour: #{$colour-white};
+}
+
+.theme-blue-black {
+  --bg-color: #{$colour-black};
+  --bs-heading-color: #{$colour-blue};
+  --txt-color: #{$colour-blue};
+  --t-linkbutton-icon-bg: #{$colour-blue};
+  --link-text-colour: #{$colour-blue};
+}
+
+.theme-green {
+  --bg-color: #{$colour-green};
+  --txt-color: #{$colour-green};
+  --bs-heading-color: #{$colour-green};
+  --txt-color-alt: #{$colour-white};
+  // link button svg
+  --t-linkbutton-icon-bg: #{$colour-green};
+}
+

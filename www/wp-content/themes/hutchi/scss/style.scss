@@ -1,0 +1,42 @@
+/*!
+Theme Name: Hutchi
+Description: Bootstrap based theme.
+Version: 1.0.0
+Author: 999 Design
+*/
+
+// import files
+@import 'fonts';
+
+// local import of required bootstrap elements - variables are covered in here too
+@import "bootstrap";
+
+// slick
+@import "../node_modules/slick-carousel/slick/slick.scss";
+@import "../node_modules/slick-carousel/slick/slick-theme.scss";
+
+// custom site global styles
+@import "global/chrome";
+@import "global/text";
+@import "global/links";
+@import "global/form";
+
+// custom site components styles
+@import "blocks/header.scss";
+@import "blocks/highlight-text.scss";
+@import "blocks/accordion.scss";
+@import "blocks/interactive-list.scss";
+@import "blocks/panel.scss";
+@import "blocks/blog-panel.scss";
+@import "blocks/two-column-content.scss";
+@import "blocks/cta.scss";
+@import "blocks/link-image-panel.scss";
+@import "blocks/two-column-content-media.scss";
+@import "blocks/partners.scss";
+@import "blocks/fixed-bg-content.scss";
+@import "blocks/panel-nav.scss";
+@import "blocks/posts.scss";
+@import "blocks/slideshow.scss";
+
+// single [case studies page]
+@import "global/single";
