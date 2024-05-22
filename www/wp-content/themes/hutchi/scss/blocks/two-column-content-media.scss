@@ -68,10 +68,11 @@
 
   .col-media {
     height: auto;
+
     @include media-breakpoint-down(lg) {
       img {
-        max-width: 75%;
-        margin-left: 25%;
+        max-width: 100%;
+        margin-left: 0;
       }
     }
     @include media-breakpoint-up(lg) {

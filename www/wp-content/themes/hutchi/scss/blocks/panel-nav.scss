@@ -7,13 +7,22 @@
 }
 
 .block-panel-nav {
-  padding: 60px 40px 20px 40px;
+  padding: 20px 40px;
   background-color: var(--bg-color);
   color: var(--txt-color-alt);
   z-index: 2000;
 
+  @include media-breakpoint-up(md) {
+    padding: 40px 40px 10px 40px;
+  }
+
   &.sticky-top {
     background-color: rgba($colour-black, .7);
+
+    //Don;t want sticky on mobile...
+    @include media-breakpoint-down(md) {
+      position: relative;
+    }
   }
 
   ul {

@@ -35,7 +35,7 @@ if (isset($style)) {
 }
 ?>
 <!--BEGIN BLOCK TWO COLUMN CONTENT + MEDIA-->
-<div class="container-fluid two-column-media g-0 <?php echo $offset; ?> <?php echo $theme; ?> <?php echo $image_placement; ?>" id="block-<?php echo str_replace(' ', '-', strtolower($title)); ?>">
+<div class="container-fluid two-column-media g-0 <?php echo $offset; ?> <?php echo $theme; ?> <?php echo $image_placement; ?> <?php echo $block['className']; ?>" id="block-<?php echo str_replace(' ', '-', strtolower($title)); ?>">
     <div class="row g-0">
         <div class="col-content col-12 <?php echo $offset_image ? '' : 'p-0'; ?> <?php echo $col1size; ?> order-5 <?php echo $col1Order; ?>">
             <div class="col-content-wrapper left-padded">

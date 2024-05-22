@@ -47,7 +47,7 @@ jQuery(document).ready(function ($) {
             }
         ]
 
-    });
+    }); 
 
     $('.slider-post-wrapper').slick({
         dots: true,
@@ -132,7 +132,9 @@ jQuery(document).ready(function ($) {
     
     if ($('.interactive-list').length) {
 
-        function makeActive(el) {
+        var isSmall = window.matchMedia("screen and (max-width: 576px)")
+
+        function makeActive(el, didClick) {
             var parent = el.closest('.interactive-list');
 
             parent.find('li.active').removeClass('active');
@@ -140,28 +142,44 @@ jQuery(document).ready(function ($) {
 
             var pos = el.index() + 1;
             parent.find('.detail-wrapper.active').removeClass('active');
-            parent.find(`.detail-wrapper:nth-of-type(${pos})`).addClass('active');
+            var detailEl = parent.find(`.detail-wrapper:nth-of-type(${pos})`);
+            detailEl.addClass('active');
+
+            //if on small screen, scroll to the content
+            if (isSmall && didClick) {
+                $("html").animate(
+                  {
+                    scrollTop: detailEl.offset().top
+                  }, 400 
+                );
+            }
+
         }
 
         $('.interactive-list li').on('click', function() {
-            makeActive($(this))
+            makeActive($(this), true)
             
             //stop auto
-            clearInterval(id)
+            //clearInterval(id)
         })
 
-        //if nothing active, make first
-        if ($('.interactive-list li.active').length == 0) {
-            $('.interactive-list li').first().trigger('click')
-        }
+        //if nothing active, make first (check all instances)
+        $('.interactive-list').each(function() {
+            if ($(this).find('li.active').length == 0) {
+                var el = $(this).find('li').first();
+                makeActive(el)
+            }
+        });
 
-        //auto rotate
+        //auto rotate - only first instance if more than one on page
+        /*
         var activeI = $('.interactive-list li.active').index();
         var n = $('.interactive-list li').length;
         var id = setInterval(function() {
             activeI = (activeI + 1) % n;
             makeActive($('.interactive-list li').eq(activeI))
         }, 3000)
+        */
     }
 
 

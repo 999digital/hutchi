@@ -7,18 +7,18 @@
         <div class="row header-row">
             <div class="col-12 col-md-6"><p class="display-2">Made<br>for people</p></div>
             <div class="col-12 col-md-6 d-flex justify-content-end"><p class="has-text-align-right">
-                    <a href="https://www.instagram.com/hutchison_tech/" target="_blank" class="sm-icon instagram"
+                    <a href="https://www.instagram.com/hutchi_tech/" target="_blank" class="sm-icon instagram"
                        title="instagram"><?php include realpath(dirname(__DIR__)) . '/hutchi/img/instagram.svg'; ?></a>
-                    <a href="https://www.facebook.com/HutchisonTech" target="_blank" class="sm-icon facebook"
+                    <a href="https://www.facebook.com/HutchiTech" target="_blank" class="sm-icon facebook"
                        title="facebook"><?php include realpath(dirname(__DIR__)) . '/hutchi/img/facebook.svg'; ?></a>
-                    <a href="https://twitter.com/Hutchison_Tech" target="_blank" class="sm-icon x"
+                    <a href="https://x.com/Hutchi_tech" target="_blank" class="sm-icon x"
                        title="x"><?php include realpath(dirname(__DIR__)) . '/hutchi/img/x.svg'; ?></a>
                     <!--a href="https://vimeo.com" target="_blank" class="sm-icon vimeo"
                        title="vimeo"><?php include realpath(dirname(__DIR__)) . '/hutchi/img/vimeo.svg'; ?></a-->
-                    <a href="https://www.linkedin.com/company/hutchison-technologies-ltd/" target="_blank" class="sm-icon linkedin"
+                    <a href="https://www.linkedin.com/company/hutchi-tech/" target="_blank" class="sm-icon linkedin"
                        title="linkedin"><?php include realpath(dirname(__DIR__)) . '/hutchi/img/linkedin.svg'; ?></a>
                     <br>
-                    <a href="mailto:info@hutchison-t.com">Info@hutchison-t.com</a>
+                    <a href="mailto:info@hutchison-t.com">info@hutchi.tech</a>
                     <br>Tel. 0333 240 7369</p>
             </div>
         </div>

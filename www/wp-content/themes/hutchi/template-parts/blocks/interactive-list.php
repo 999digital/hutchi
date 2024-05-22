@@ -12,7 +12,7 @@ if (isset($style)) {
 ?>
 
 <!--BEGIN BLOCK INTERACTIVE LIST-->
-<div class="interactive-list <?php echo $theme; ?>">
+<div class="interactive-list <?php echo $theme; ?> <?php echo $block['className']; ?>">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6">
@@ -36,7 +36,7 @@ if (isset($style)) {
                     $n = 1;
                     $icon = file_get_contents(realpath(dirname(__DIR__)) . '../../img/arrow-right.svg', FILE_USE_INCLUDE_PATH);
                     foreach ($items as $item):
-                        $img = $item['image'] ? wp_get_attachment_image($item['image']['ID'], 'medium', false, ['class' => 'img-fluid']) : '';
+                        $img = $item['image'] ? wp_get_attachment_image($item['image']['ID'], 'medium', false, ['class' => 'img-fluid']) : false;
                         $link = $item['link'];
                         $link_class = '';
                         if ($link) {
@@ -51,9 +51,11 @@ if (isset($style)) {
                         }
 
                         $list_out .= '<li class="' . $link_class . '">' . esc_html($item['title']) . '</li>';
-                        $detail_out .= '<div class="detail-wrapper ' . $link_class . '"><div class="detail-img">' . $img . '</div><div class="detail-text">'
+                        $detail_out .= '<div class="detail-wrapper ' . $link_class . '">'
+                            . ($img ? '<div class="detail-img">' . $img . '</div>' : '')
+                            .'<div class="detail-text">'
                             . '<p class="eyebrow no-underline">' . sprintf("%02d", $n) . ' ' . esc_html($item['title']) . '</p>'
-                            . '<p>' . esc_html($item['text']) . '</p>';
+                            . '<p>' . $item['text'] . '</p>'; //allow markup in text
                         if ($link):
                             $link_url = $link['url'];
                             $link_title = $link['title'];

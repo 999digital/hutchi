@@ -21,7 +21,7 @@ if ($layout == 'slider') {
 ?>
 
 <!--BEGIN LINK IMAGE PANEL-->
-<div class="link-img-panel <?php echo $wrapper_class; ?>">
+<div class="link-img-panel <?php echo $wrapper_class; ?> <?php echo $block['className']; ?>">
     <div class="<?php echo $container; ?> link-image <?php echo $layout_class; ?>">
         <div class="row">
             <?php if ($eyebrow || $title): ?>
@@ -72,8 +72,8 @@ if ($layout == 'slider') {
                                     <p class="panel-text">
                                         <?php echo esc_html($panel['text']); ?>
                                     </p>
-                                    <p class="link-text"><span>Explore</span></p>
                                 </div>
+                                <p class="link-text"><span>Explore</span></p>
                             </div>
                             <?php if ($link): ?>
                         </a>

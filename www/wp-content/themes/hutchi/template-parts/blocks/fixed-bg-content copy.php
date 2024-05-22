@@ -10,7 +10,7 @@ $text = get_field('text');
 
 <!--BEGIN BLOCK FIXED BG CONTENT-->
 
-<div class="fixed-bg">
+<div class="fixed-bg <?php echo $block['className']; ?>">
     <div class="container">
         <div class="row main">
             <div class="col-12 col-md-6 col-left">

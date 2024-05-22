@@ -26,6 +26,11 @@ if ($image) {
     $info = wp_get_attachment_image_src($image, 'large');
     $css = "background: url('{$info[0]}') 50% 50% no-repeat;background-size: cover;";
 }
+
+$excerpt = '';
+if (!empty($post->post_excerpt)) {
+    $excerpt = "<p>{$post->post_excerpt}</p>";
+}
 ?>
 <?php get_header(); ?>
 <?php if (have_posts()):
@@ -47,7 +52,7 @@ if ($image) {
                 <div class="header-text">
                     <p class="eyebrow"><?php echo $main_cat->name ?></p>
                     <h1><?php the_title(); ?></h1>
-                    <?php the_excerpt(); ?>
+                    <?php  echo $excerpt; ?>
                     <div class="header-links">
                         <a class="link-btn" href="#blog-content">
                             <span class="text">Read more</span>

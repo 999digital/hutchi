@@ -41,6 +41,8 @@
       padding-left: 40px;
       color: var(--txt-color-alt);
       opacity: .5;
+      width: 70px;
+      flex-shrink: 0;
     }
 
     &.active {
@@ -90,23 +92,21 @@
 
   .detail-text {
     min-height: 33.33%;
+    flex-grow: 1;
     background-color: $colour-blue;
     padding: 100px 80px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    color: $colour-white;
 
     .eyebrow {
       color: $colour-white;
-      margin-top: auto;
       margin-bottom: 15px;
     }
 
     p, a {
       color: $colour-white;
-    }
-
-    p:last-child {
-      margin-bottom: auto;
     }
   }
 

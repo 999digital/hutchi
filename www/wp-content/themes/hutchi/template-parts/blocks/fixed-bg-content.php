@@ -12,7 +12,7 @@ $colour = 'yellow'; //want to parameterise
 
 <!--BEGIN BLOCK FIXED BG CONTENT-->
 
-<div class="fixed-bg <?php echo $colour; ?>">
+<div class="fixed-bg <?php echo $colour; ?> <?php echo $block['className']; ?>">
     <div class="container">
         <div class="row main">
             <div class="col-12 col-md-9">

@@ -11,7 +11,7 @@ $panels = array_filter($blocks, function ($block) {
     <!--BEGIN BLOCK PANEL NAV-->
     <div class="block-panel-nav-bg theme theme-black">
     </div>
-    <div class="block-panel-nav theme theme-black">
+    <div class="block-panel-nav theme theme-black <?php echo $block['className']; ?>">
         <div class="container">
             <div class="row">
                 <div class="col-12">

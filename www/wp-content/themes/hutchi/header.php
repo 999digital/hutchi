@@ -4,6 +4,8 @@ require_once('class-wp-bootstrap-navwalker.php');
 //Breadcumb?
 $parent_id = wp_get_post_parent_id(get_the_ID());
 global $post;
+$crumb1 = false;
+
 if ($parent_id) {
     //this assumes only 2 levels
     $parent = get_post($parent_id);

@@ -45,3 +45,5 @@ function enable_block_editor_for_pages($use_block_editor, $post)
 }
 add_filter('use_block_editor_for_post', 'enable_block_editor_for_pages', 10, 2);
 
+
+

@@ -1,0 +1,47 @@
+
+*.log
+#site/.htaccess
+site/.htpasswd
+#site/wp-config.php
+site/wp-content/advanced-cache.php
+site/wp-content/backup-db/
+site/wp-content/backups/
+site/wp-content/blogs.dir/
+site/wp-content/cache/
+site/wp-content/upgrade/
+#site/wp-content/uploads/
+site/wp-content/wp-cache-config.php
+site/wp-content/plugins/hello.php
+site/wp-content/uploads/wc-logs
+
+site/license.txt
+site/readme.html
+site/sitemap.xml
+site/sitemap.xml.gz
+
+# OSX specific stuff
+.DS_Store
+.AppleDouble
+.LSOverride
+#Icon
+# Thumbnails
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+# WINDOWS specific stuff
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+# Folder config file
+Desktop.ini
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+
+_docs/
+site/.idea/
+node_modules/
+www/wp-content/backups-dup-lite/

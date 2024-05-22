@@ -8,7 +8,7 @@ if ($link) {
 }
 ?>
 <!--BEGIN BLOCK CTA-->
-<div class="cta-bar theme theme-<?php echo $style; ?>">
+<div class="cta-bar theme theme-<?php echo $style; ?> <?php echo $block['className']; ?>">
     <div class="container">
         <div class="row">
             <div class="col-12">

@@ -11,7 +11,7 @@ if ($link) {
 ?>
 
 <!--BEGIN BLOCK PARTNERS-->
-<div class="container partners">
+<div class="container partners <?php echo $block['className']; ?>">
     <div class="<?php echo $border ? 'border border-5' : ''; ?>">
         <?php if ($title): ?>
             <div class="row">

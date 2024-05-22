@@ -17,7 +17,7 @@ $css = '';
 ?>
 
 <!--BEGIN BLOCK HEADER-->
-<div class="block-header container-fluid">
+<div class="block-header container-fluid <?php echo $block['className']; ?>">
     <div class="row">
         <div class="col <?php echo $style; ?>" style="<?php echo $css; ?>">
             <?php
@@ -30,7 +30,7 @@ $css = '';
                     <div class="border-frame"><div class="top-left"></div><div class="top-right"></div></div>
                     <div class="bg-filter"></div>
                     <?php if ($background_video_url): ?>
-                        <video autoplay muted loop <?php if ($background_image) {
+                        <video autoplay muted playsinline loop <?php if ($background_image) {
                             echo "poster=\"{$background_image['url']}\"";
                         } ?>>
                             <source src="<?php echo $background_video_url; ?>"/>
@@ -43,11 +43,13 @@ $css = '';
                         <p>
                             <?php echo esc_html($text); ?>
                         </p>
-                        <a class="link-btn" href="<?php echo esc_url($link_url); ?>"
-                           target="<?php echo esc_attr($link_target); ?>">
-                            <span class="text"><?php echo esc_html($link_title); ?></span>
-                            <span class="link-btn__icon yellow"><?php include realpath(dirname(__DIR__)) . '../../img/arrow-right.svg'; ?></span>
-                        </a>
+                        <?php if ($link): ?>
+                            <a class="link-btn" href="<?php echo esc_url($link_url); ?>"
+                               target="<?php echo esc_attr($link_target); ?>">
+                                <span class="text"><?php echo esc_html($link_title); ?></span>
+                                <span class="link-btn__icon yellow"><?php include realpath(dirname(__DIR__)) . '../../img/arrow-right.svg'; ?></span>
+                            </a>
+                        <?php endif; ?>
                     </div>
                 </div>
 

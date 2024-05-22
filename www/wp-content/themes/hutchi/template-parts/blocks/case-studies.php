@@ -5,7 +5,7 @@ $no_hover = get_field('no_hover');
 
 <!--BEGIN CASE STUDIES PANEL-->
 
-<div class="container-fluid link-image landscape g-0 <?php echo $no_hover ? 'no-hover' : ''; ?>">
+<div class="container-fluid link-image landscape g-0 <?php echo $no_hover ? 'no-hover' : ''; ?> <?php echo $block['className']; ?>">
     <div class="row g-0">
 
         <?php foreach ($case_studies as $case_study):

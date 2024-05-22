@@ -49,7 +49,7 @@ foreach($blocks as $ablock) {
 
 <!--BEGIN BLOCK PANEL-->
 <div class="link-dest" id="panel-<?php echo $pos; ?>"></div>
-<div class="block-panel theme-black <?php echo $image_placement; ?> <?php echo $block['className']; ?>">
+<div class="block-panel theme-black <?php echo $image_placement; ?> <?php echo $block['className']; ?> <?php echo $block['className']; ?>">
     <div class="container-fluid">
         <div class="overlay-element"></div>
         <div class="row">

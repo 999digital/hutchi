@@ -13,8 +13,12 @@
   }
 
   .border-frame {
+    border-top: 8px solid $colour-white;
     margin: 70px 12px 60px;
     padding: 65px 70px;
+    &:before {
+      top: 0;
+    }
   }
 
   * {

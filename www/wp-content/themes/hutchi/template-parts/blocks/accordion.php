@@ -8,7 +8,7 @@ $items = get_field('items');
 ?>
 
 <!--BEGIN BLOCK ACCORDION-->
-<div class="accordion-wrapper theme theme-black">
+<div class="accordion-wrapper theme theme-black <?php echo $block['className']; ?>">
     <div class="container-fluid g-0">
         <div class="row align-items-center g-0">
             <div class="col-12 col-lg-6 col-media p-0">

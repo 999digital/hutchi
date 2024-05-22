@@ -1,0 +1,33 @@
+.pagination {
+	margin-top: 30px;
+
+	.col-12 {
+		text-align: center;
+	}
+
+	a {
+		display: inline-block;
+		width: auto;
+		padding: 10px;
+	}
+
+	.current {
+		padding: 10px;
+		color: $colour-white;
+		font-weight: 700;
+	}
+
+	.dots {
+		color: $colour-white;
+	}
+}
+
+.post-listing h4 {
+	@include font-size(1.875rem);
+}
+
+.no-posts {
+	color: $colour-white;
+    margin-bottom: 2rem;
+    text-align: center;
+}

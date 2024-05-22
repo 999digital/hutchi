@@ -2,7 +2,14 @@
   position:absolute;
   z-index:-1;
   left:0;
-  margin-top:-240px;
+  margin-top: -290px;
+
+  @include media-breakpoint-up(sm) {
+    margin-top: -220px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: -140px;
+  }
 }
 
 .block-panel {
@@ -70,10 +77,6 @@
     bottom: 0;
 
     width: 90vw;
-    
-    @include media-breakpoint-up(xxl) {
-      //width: 75vw;
-    }
   
   }
 

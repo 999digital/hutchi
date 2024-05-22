@@ -51,6 +51,9 @@
     bottom: 4%;
     color: $colour-grey;
     @include font-size(0.875rem);
+    //stop long links making page wide!
+    max-width: calc(100% - 12px);
+    overflow-x: hidden;
   }
 
   //Theming

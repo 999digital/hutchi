@@ -26,7 +26,7 @@ if ($bottom_link) {
 
 <!--BEGIN BLOCK BLOG PANEL-->
 
-<div class="blog-panel" style="background-image: url('<?php echo $img; ?>')">
+<div class="blog-panel <?php echo $block['className']; ?>" style="background-image: url('<?php echo $img; ?>')">
     <div class="bg-filter"></div>
     <div class="container">
         <div class="row">

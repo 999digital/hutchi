@@ -6,7 +6,7 @@ $text = get_field('text');
 ?>
 
 <!--BEGIN BLOCK HIGHLIGHT TEXT-->
-<div class="highlight-text theme theme-<?php echo $style; ?>" id="block-<?php echo str_replace(' ', '-', strtolower($title)); ?>">
+<div class="highlight-text theme theme-<?php echo $style; ?> <?php echo $block['className']; ?>" id="block-<?php echo str_replace(' ', '-', strtolower($title)); ?>">
     <div class="container">
         <div class="row">
             <div class="col-12">

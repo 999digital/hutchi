@@ -359,6 +359,12 @@ footer {
 
 .border-frame {
   border: solid 8px $colour-white;
+  border-top: none;
+  pointer-events: none;
+
+  a {
+    pointer-events: all;
+  }
 
   &:before,
   &:after {
@@ -539,4 +545,14 @@ footer {
 
 .wp-block-image img {
   width: 100%;
+}
+
+//Hide google maps infowindows
+.gm-style-iw-a {
+  display: none;
+}
+
+// Utility 
+.hide {
+  display: none !important;
 }

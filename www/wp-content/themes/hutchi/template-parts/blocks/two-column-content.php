@@ -11,7 +11,7 @@ if (isset($style)) {
 ?>
 
 <!--BEGIN BLOCK TWO COLUMN CONTENT-->
-<div class="container-fluid two-col-content <?php echo $theme; ?>">
+<div class="container-fluid two-col-content <?php echo $theme; ?> <?php echo $block['className']; ?>">
     <div class="row">
         <div class="col-12 col-md-5 order-last order-md-first">
             <div class="col-content-wrapper left-padded">

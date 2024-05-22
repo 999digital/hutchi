@@ -3,7 +3,7 @@ $images = get_field('images');
 ?>
 
 <!--BEGIN SLIDESHOW PANEL-->
-<div class="slider-post-wrapper">
+<div class="slider-post-wrapper <?php echo $block['className']; ?>">
 	<?php foreach ($images as $image): ?>
 		<div class="slide-wrapper">
             <img src="<?php echo $image['image']['url']; ?>">
