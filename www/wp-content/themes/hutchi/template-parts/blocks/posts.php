@@ -44,6 +44,9 @@ $query = new WP_query(array(
     'paged' => get_query_var('paged')
 ));
 
+//reset on submit filter form by striping out page/querystring
+$current_url =  get_pagenum_link(); 
+$submit_url = strtok($current_url, '?');
 ?>
 
 <!--BEGIN BLOCK POSTS-->
@@ -54,7 +57,7 @@ $query = new WP_query(array(
             ?>
             <div class="row">
                 <div class="col">
-                    <form class="post-filters" method="post">
+                    <form class="post-filters" method="post" action="<?php echo $submit_url; ?>">
                         <div class="form-group">
                             <label for="sector">Sector</label>
                             <select id="sector" name="sector">
