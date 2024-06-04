@@ -20,6 +20,11 @@ if ($link) {
     $link_target = $link['target'] ? $link['target'] : '_self';
 }
 
+//titles have <br> is to force layout
+$slug = strtolower(esc_html(str_ireplace('<br>', ' ', $title)));
+$slug = str_replace(' ', '-', $slug);
+$slug = str_replace('&amp;', 'and', $slug);
+
 $colMediaOrder = 'order-1';
 $colContentOrder = 'order-5';
 $colOffset = ' offset-md-8';
@@ -30,25 +35,10 @@ if ($image_placement == 'image-right'){
     $colOffset = '';
 }
 
-//block ID not available in parse_blocks for panel nav so need to track our own position, hacky/inefficient!
-global $post;
-$blocks = parse_blocks($post->post_content);
-$pos = 1;
-foreach($blocks as $ablock) {
-    if ($ablock['blockName'] == 'acf/panel') {
-        if ($ablock['attrs']['data']['title'] == $title) {
-            //us!
-            break;
-        }
-        else {
-            $pos++;
-        }
-    }
-}
 ?>
 
 <!--BEGIN BLOCK PANEL-->
-<div class="link-dest" id="panel-<?php echo $pos; ?>"></div>
+<div class="link-dest" id="<?php echo $slug; ?>"></div>
 <div class="block-panel theme-black <?php echo $image_placement; ?> <?php echo $block['className']; ?> <?php echo $block['className']; ?>">
     <div class="container-fluid">
         <div class="overlay-element"></div>

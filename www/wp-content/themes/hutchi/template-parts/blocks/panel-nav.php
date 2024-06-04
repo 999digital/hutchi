@@ -17,13 +17,15 @@ $panels = array_filter($blocks, function ($block) {
                 <div class="col-12">
                     <ul>
                         <?php
-                        $n = 1;
+                        $n=1;
                         foreach ($panels as $panel):
                             //titles have <br> is to force layout
                             $title = esc_html(str_ireplace('<br>', ' ', $panel['attrs']['data']['title']));
+                            $slug = strtolower(str_replace(' ', '-', $title));
+                            $slug = str_replace('&amp;', 'and', $slug);
                             ?>
                             <li>
-                                <a href="#panel-<?php echo $n; ?>">
+                                <a href="#<?php echo $slug; ?>">
                                     <span class="marker"><?php echo sprintf("%02d", $n); ?></span>
                                     <span class="text"><?php echo $title; ?></span>
                                 </a>
